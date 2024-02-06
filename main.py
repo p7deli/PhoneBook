@@ -301,7 +301,7 @@ class PhoneBook(tk.Tk):
         self.ph_about_user = ImageTk.PhotoImage(self.img_about_user)
         tk.Label(self.tab_view.tab("About Me"), text="", image=self.ph_about_user, bg="#a59db3").place(x=550, y=100)
 
-        self.img_programmer = Image.open("pictures/poria.jpeg")
+        self.img_programmer = Image.open("pictures/poria.jpg")
         self.img_programmer = self.img_programmer.resize((150, 150))
         self.ph_programmer = ImageTk.PhotoImage(self.img_programmer)
         tk.Label(self.tab_view.tab("About Me"), text="", image=self.ph_programmer, bg="#a59db3",
