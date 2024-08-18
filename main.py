@@ -7,12 +7,20 @@ from database_ import Database
 import webbrowser
 
 
+WIDTH = 950
+HEIGHT = 600
+
+
 class PhoneBook(tk.Tk):
     def __init__(self):
         super().__init__()
 
+        # ------------------------------ geometry
+        self.x = ((self.winfo_screenwidth()//2) - (WIDTH // 2))
+        self.y = ((self.winfo_screenheight()//2) - (HEIGHT // 2))
+        self.geometry(f"{WIDTH}x{HEIGHT}+{self.x}+{self.y}")
+        # ---------------------------------------
         self.title("Phone Book")
-        self.geometry("950x600+200+20")
         self.resizable(False, False)
         self.config(bg="#6b6080")
         self.iconbitmap("icons/phonebook.ico")
